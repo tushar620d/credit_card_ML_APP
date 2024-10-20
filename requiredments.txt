@@ -86,6 +86,7 @@ matplotlib==3.7.1
 matplotlib-inline==0.1.6
 mdurl==0.1.2
 missingno==0.5.2
+missingno==0.4.2
 mistune==2.0.5
 ml-dtypes==0.1.0
 msgpack==1.0.5
