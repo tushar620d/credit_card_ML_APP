@@ -6,7 +6,7 @@
 
 import numpy as np
 import pandas as pd
-import missingno as msno
+# import missingno as msno
 import matplotlib
 import matplotlib.pyplot as plt
 import seaborn as sns
@@ -257,15 +257,15 @@ cc_data_full_data.describe()
 # In[30]:
 
 
-msno.matrix(cc_data_full_data)
-plt.show()
+# msno.matrix(cc_data_full_data)
+# plt.show()
 
 
-# In[31]:
+# # In[31]:
 
 
-msno.bar(cc_data_full_data)
-plt.show()
+# msno.bar(cc_data_full_data)
+# plt.show()
 
 
 # In[32]:
