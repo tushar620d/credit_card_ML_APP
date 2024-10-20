@@ -6,7 +6,7 @@
 
 import numpy as np
 import pandas as pd
-# import missingno as msno
+import missingno as msno
 import matplotlib
 import matplotlib.pyplot as plt
 import seaborn as sns
