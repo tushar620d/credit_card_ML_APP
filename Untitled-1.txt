@@ -1,0 +1,33 @@
+/* Assuming you have a dataset named "my_data" with columns dd1, dd2, dd3, etc. */
+%macro unique_count(column);
+
+    /* Run PROC FREQ to get unique values, their counts, and percentages */
+    PROC FREQ DATA=my_data NOPRINT;
+        TABLES &column / OUT=freq_&column (DROP=PERCENT);
+        /* DROP PERCENT from the initial output, we'll calculate later */
+    RUN;
+    
+    /* Calculate the percentage manually and store the results */
+    DATA freq_&column;
+        SET freq_&column;
+        TotalCount = _FREQ_; /* Total Count */
+        PctCount = (TotalCount / (SELECT COUNT(*) FROM my_data)) * 100; /* Percentage calculation */
+        ColumnName = "&column"; /* Label the column name for reference */
+    RUN;
+
+%mend;
+
+/* Call the macro for each column */
+%unique_count(dd1);
+%unique_count(dd2);
+%unique_count(dd3);
+/* Add more calls for as many columns as you have */
+
+/* Combine results into a final answer table */
+DATA answer_table;
+    SET freq_dd1 freq_dd2 freq_dd3; /* Append all the frequency datasets */
+RUN;
+
+/* View the final result */
+PROC PRINT DATA=answer_table;
+RUN;

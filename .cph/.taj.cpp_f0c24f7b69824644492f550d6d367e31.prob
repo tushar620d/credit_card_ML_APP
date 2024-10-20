@@ -1,0 +1,1 @@
+{"name":"Local: taj","url":"c:\\Users\\91799\\Desktop\\credit_card_prediction\\taj.cpp","tests":[{"id":1727631977475,"input":"4\n","output":"1 4 2 3 "},{"id":1727632480781,"input":"1\n4 2","output":"5"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\91799\\Desktop\\credit_card_prediction\\taj.cpp","group":"local","local":true}
