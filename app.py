@@ -3,9 +3,6 @@ import pandas as pd
 import base64
 from pathlib import Path
 import time
-import os
-os.system('pip install missingno==0.5.2')
-import missingno as msno
 from mian import prediction_function
 
 # Function to add background image and custom CSS
