@@ -1,12 +1,13 @@
-numpy==1.23.5
+numpy>=1.26.0
 pandas==2.2.2
 missingno==0.5.2
 matplotlib==3.7.1
 seaborn==0.13.0
-scipy==1.7.3  # Use a version compatible with scikit-plot
+scipy==1.7.3  # Version compatible with scikit-plot
 scikit-learn==1.2.2
 imbalanced-learn==0.12.3
 scikit-plot==0.3.7
 yellowbrick==1.5
 joblib==1.2.0
 streamlit==1.38.0
+setuptools>=65.5.0  # To ensure distutils is available
