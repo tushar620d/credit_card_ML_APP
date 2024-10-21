@@ -1,41 +1,12 @@
-# Streamlit for the web app interface
-streamlit==1.38.0
-
-# Data manipulation
-pandas==2.2.2
-numpy==1.23.5
-
-# Data visualization
-matplotlib==3.7.1
-seaborn==0.13.0
-missingno==0.5.2
-
-# Statistical functions
-scipy==1.10.1
-
-# Scikit-learn for machine learning
-scikit-learn==1.2.2
-
-# Imbalanced-learn for SMOTE
-imbalanced-learn==0.12.3
-
-# Yellowbrick for visualizations
-yellowbrick==1.5
-
-# Scikit-plot for plotting metrics
-scikit-plot==0.3.7
-
-# For handling joblib files
-joblib==1.2.0
-
-# Warning handling
-warnings
-
-# pathlib for file path handling
-pathlib
-
-# Optional: If you use pandas profiling (commented out in your imports)
-# pandas-profiling==3.6.6
-
-# If you are using Jupyter, include this (although it's not in the current code)
-# jupyter==1.0.0
+numpy
+pandas
+missingno
+matplotlib
+seaborn
+scipy
+scikit-learn
+imbalanced-learn
+scikit-plot
+yellowbrick
+joblib
+streamlit
