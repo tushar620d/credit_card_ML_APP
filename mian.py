@@ -6,9 +6,7 @@
 
 import numpy as np
 import pandas as pd
-import missingno as msno
-import matplotlib
-import matplotlib.pyplot as plt
+
 import seaborn as sns
 import warnings
 # from pandas.core.common import SettingWithCopyWarning
@@ -23,6 +21,9 @@ from sklearn.compose import ColumnTransformer
 from sklearn.preprocessing import OneHotEncoder, MinMaxScaler, OrdinalEncoder
 from sklearn.metrics import ConfusionMatrixDisplay, classification_report, roc_curve, roc_auc_score
 from imblearn.over_sampling import SMOTE
+import missingno as msno
+import matplotlib
+import matplotlib.pyplot as plt
 from sklearn.linear_model import SGDClassifier, LogisticRegression
 from sklearn.svm import SVC
 from sklearn.tree import DecisionTreeClassifier
