@@ -3,6 +3,33 @@ import pandas as pd
 import base64
 from pathlib import Path
 import time
+def install(package):
+    subprocess.check_call([sys.executable, "-m", "pip", "install", package])
+
+# List of libraries to install
+libraries = [
+    'numpy',
+    'pandas',
+    'missingno',
+    'matplotlib',
+    'seaborn',
+    'scipy',
+    'scikit-learn',
+    'imbalanced-learn',
+    'scikit-plot',
+    'yellowbrick',
+    'joblib',
+    'streamlit'
+]
+
+# Install each library
+for lib in libraries:
+    try:
+        install(lib)
+        print(f"{lib} installed successfully!")
+    except Exception as e:
+        print(f"Failed to install {lib}: {e}")
+        
 from mian import prediction_function
 
 # Function to add background image and custom CSS
